@@ -58,7 +58,7 @@ import (
 // @x-extension-openapi {"example": "value on a json format"}
 
 func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
-	// programatically set swagger info
+	// set swagger info dynamic
 	docs.SwaggerInfo.Title = lib.GetStringConf("base.swagger.title")
 	docs.SwaggerInfo.Description = lib.GetStringConf("base.swagger.desc")
 	docs.SwaggerInfo.Version = "1.0"
@@ -76,7 +76,10 @@ func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	adminLoginRouter := router.Group("/admin_login")
-	store, err := sessions.NewRedisStore(10, "tcp", lib.GetStringConf("base.session.redis_server"), lib.GetStringConf("base.session.redis_password"), []byte("secret"))
+	store, err := sessions.NewRedisStore(10, "tcp",
+		lib.GetStringConf("base.session.redis_server"),
+		lib.GetStringConf("base.session.redis_password"),
+		[]byte("secret"))
 	if err != nil {
 		log.Fatalf("sessions.NewRedisStore err:%v", err)
 	}
