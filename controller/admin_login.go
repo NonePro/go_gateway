@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"github.com/e421083458/go_gateway/dao"
 	"github.com/e421083458/go_gateway/dto"
+	"github.com/e421083458/go_gateway/golang_common/lib"
 	"github.com/e421083458/go_gateway/middleware"
 	"github.com/e421083458/go_gateway/public"
-	"github.com/e421083458/go_gateway/golang_common/lib"
 	"github.com/gin-gonic/contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"time"
@@ -30,7 +30,7 @@ func AdminLoginRegister(group *gin.RouterGroup) {
 // @Param body body dto.AdminLoginInput true "body"
 // @Success 200 {object} middleware.Response{data=dto.AdminLoginOutput} "success"
 // @Router /admin_login/login [post]
-func (adminlogin *AdminLoginController) AdminLogin(c *gin.Context) {
+func (adminLogin *AdminLoginController) AdminLogin(c *gin.Context) {
 	params := &dto.AdminLoginInput{}
 	if err := params.BindValidParam(c); err != nil {
 		middleware.ResponseError(c, 2000, err)
@@ -80,7 +80,7 @@ func (adminlogin *AdminLoginController) AdminLogin(c *gin.Context) {
 // @Produce  json
 // @Success 200 {object} middleware.Response{data=string} "success"
 // @Router /admin_login/logout [get]
-func (adminlogin *AdminLoginController) AdminLoginOut(c *gin.Context) {
+func (adminLogin *AdminLoginController) AdminLoginOut(c *gin.Context) {
 	sess := sessions.Default(c)
 	sess.Delete(public.AdminSessionInfoKey)
 	sess.Save()
