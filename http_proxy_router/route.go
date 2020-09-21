@@ -1,9 +1,9 @@
 package http_proxy_router
 
 import (
-	"github.com/e421083458/go_gateway/controller"
-	"github.com/e421083458/go_gateway/http_proxy_middleware"
-	"github.com/e421083458/go_gateway/middleware"
+	"github.com/NonePro/go_gateway/controller"
+	"github.com/NonePro/go_gateway/http_proxy_middleware"
+	"github.com/NonePro/go_gateway/middleware"
 	"github.com/gin-gonic/gin"
 )
 

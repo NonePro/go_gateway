@@ -2,12 +2,12 @@ package main
 
 import (
 	"flag"
-	"github.com/e421083458/go_gateway/dao"
-	"github.com/e421083458/go_gateway/golang_common/lib"
-	"github.com/e421083458/go_gateway/grpc_proxy_router"
-	"github.com/e421083458/go_gateway/http_proxy_router"
-	"github.com/e421083458/go_gateway/router"
-	"github.com/e421083458/go_gateway/tcp_proxy_router"
+	"github.com/NonePro/go_gateway/dao"
+	"github.com/NonePro/go_gateway/golang_common/lib"
+	"github.com/NonePro/go_gateway/grpc_proxy_router"
+	"github.com/NonePro/go_gateway/http_proxy_router"
+	"github.com/NonePro/go_gateway/router"
+	"github.com/NonePro/go_gateway/tcp_proxy_router"
 	"os"
 	"os/signal"
 	"syscall"
@@ -20,6 +20,8 @@ var (
 	endpoint = flag.String("endpoint", "", "input endpoint dashboard or server")
 	config   = flag.String("config", "", "input config file like ./conf/dev/")
 )
+
+// 解析并校验启动参数
 
 func main() {
 	flag.Parse()

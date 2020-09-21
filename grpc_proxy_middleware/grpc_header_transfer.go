@@ -1,7 +1,7 @@
 package grpc_proxy_middleware
 
 import (
-	"github.com/e421083458/go_gateway/dao"
+	"github.com/NonePro/go_gateway/dao"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"

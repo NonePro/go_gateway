@@ -2,11 +2,11 @@ package controller
 
 import (
 	"fmt"
-	"github.com/e421083458/go_gateway/dao"
-	"github.com/e421083458/go_gateway/dto"
-	"github.com/e421083458/go_gateway/middleware"
-	"github.com/e421083458/go_gateway/public"
-	"github.com/e421083458/go_gateway/golang_common/lib"
+	"github.com/NonePro/go_gateway/dao"
+	"github.com/NonePro/go_gateway/dto"
+	"github.com/NonePro/go_gateway/middleware"
+	"github.com/NonePro/go_gateway/public"
+	"github.com/NonePro/go_gateway/golang_common/lib"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 	"strings"

@@ -2,9 +2,9 @@ package http_proxy_middleware
 
 import (
 	"fmt"
-	"github.com/e421083458/go_gateway/dao"
-	"github.com/e421083458/go_gateway/middleware"
-	"github.com/e421083458/go_gateway/public"
+	"github.com/NonePro/go_gateway/dao"
+	"github.com/NonePro/go_gateway/middleware"
+	"github.com/NonePro/go_gateway/public"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 	"strings"

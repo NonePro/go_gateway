@@ -2,8 +2,8 @@ package dao
 
 import (
 	"fmt"
-	"github.com/e421083458/go_gateway/public"
-	"github.com/e421083458/go_gateway/reverse_proxy/load_balance"
+	"github.com/NonePro/go_gateway/public"
+	"github.com/NonePro/go_gateway/reverse_proxy/load_balance"
 	"github.com/e421083458/gorm"
 	"github.com/gin-gonic/gin"
 	"net"

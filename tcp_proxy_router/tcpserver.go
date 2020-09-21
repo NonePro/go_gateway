@@ -3,10 +3,10 @@ package tcp_proxy_router
 import (
 	"context"
 	"fmt"
-	"github.com/e421083458/go_gateway/dao"
-	"github.com/e421083458/go_gateway/reverse_proxy"
-	"github.com/e421083458/go_gateway/tcp_proxy_middleware"
-	"github.com/e421083458/go_gateway/tcp_server"
+	"github.com/NonePro/go_gateway/dao"
+	"github.com/NonePro/go_gateway/reverse_proxy"
+	"github.com/NonePro/go_gateway/tcp_proxy_middleware"
+	"github.com/NonePro/go_gateway/tcp_server"
 	"log"
 	"net"
 )

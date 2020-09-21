@@ -2,8 +2,8 @@ package tcp_proxy_middleware
 
 import (
 	"fmt"
-	"github.com/e421083458/go_gateway/dao"
-	"github.com/e421083458/go_gateway/public"
+	"github.com/NonePro/go_gateway/dao"
+	"github.com/NonePro/go_gateway/public"
 	"strings"
 )
 

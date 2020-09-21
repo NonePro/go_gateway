@@ -2,7 +2,7 @@ package public
 
 import (
 	"fmt"
-	"github.com/e421083458/go_gateway/golang_common/lib"
+	"github.com/NonePro/go_gateway/golang_common/lib"
 	"github.com/garyburd/redigo/redis"
 	"sync/atomic"
 	"time"

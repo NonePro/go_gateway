@@ -2,7 +2,7 @@ package tcp_proxy_middleware
 
 import (
 	"context"
-	"github.com/e421083458/go_gateway/tcp_server"
+	"github.com/NonePro/go_gateway/tcp_server"
 	"math"
 	"net"
 )
